@@ -1,5 +1,8 @@
 package com.ecomarket_spa.ecomarket.repository;
-
-public class ProductoRepository {
+import java.util.Optional;
+import lombok.Data;
+@Data
+public class ProductoRepository extends JpaRepository {
+    
 
 }

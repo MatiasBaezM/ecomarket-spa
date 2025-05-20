@@ -1,11 +1,12 @@
 package com.ecomarket_spa.ecomarket.model;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import lombok.Data;
-@Data
+
 @Entity
 public class TipoUsuario {
 @Id
@@ -15,5 +16,5 @@ public class TipoUsuario {
     private String nombre;
 
     @OneToMany(mappedBy = "tipoUsuario")
-    private List<Cliente> cliente ;
+    private List<Cliente> cliente= 
 }
