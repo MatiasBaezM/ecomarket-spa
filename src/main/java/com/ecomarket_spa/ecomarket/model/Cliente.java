@@ -1,16 +1,25 @@
 package com.ecomarket_spa.ecomarket.model;
 
-import lombok.AllArgsConstructor;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class Usuario {
+@Entity
+
+public class Cliente {
+    @Id@GeneratedValue
+    private long id;
 
     private int rut;
-    private String nombre;
-    private String apellido;
-    private String edad;
+    private String nombres;
+    private String apellidos;
+
+
+
+    @ManyToOne
+    private TipoUsuario tipoUsuario;
 }

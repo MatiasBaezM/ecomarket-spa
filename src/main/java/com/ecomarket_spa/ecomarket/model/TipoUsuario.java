@@ -15,5 +15,5 @@ public class TipoUsuario {
     private String nombre;
 
     @OneToMany(mappedBy = "tipoUsuario")
-    private List<> ;
+    private List<Cliente> cliente ;
 }
