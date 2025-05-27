@@ -1,5 +1,5 @@
 package com.ecomarket_spa.ecomarket.services;
 
-public class autentificacion {
+public class VentaService {
 
 }
