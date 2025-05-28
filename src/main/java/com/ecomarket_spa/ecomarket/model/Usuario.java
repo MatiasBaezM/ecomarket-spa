@@ -23,10 +23,10 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String rut;
+    private String email;
     private String clave;
     private String nombre;
     private String apellido;
-    private String email;
     private String rol; // admin o user
     private String telefono;
 

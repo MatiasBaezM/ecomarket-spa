@@ -35,7 +35,6 @@ private final ProductoRepository productoRepository;
         }
         return null;
     }
-    //no se pq da error aki
     public void deleteProducto(Long id) {
         productoRepository.deleteById(id);
     }
